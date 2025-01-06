@@ -15,3 +15,19 @@ Ensure you are using Python 3.7 or higher, and install the following dependencie
 
 ```bash
 pip install torch transformers datasets pandas scikit-learn
+
+## Dataset Format
+
+The dataset is structured in JSONLINES format, where each line represents a JSON object containing the following fields:
+
+- `tokens`: A list of words or tokens in a sentence.
+- `ner_tags`: A list of NER labels for each token (note: these are not present in the test dataset).
+- `unique_id`: A unique identifier for each sentence (only in the test dataset).
+
+Here is an example of what a line in the dataset looks like:
+
+```json
+{
+  "tokens": ["The", "company", "Apple", "is", "based", "in", "California"],
+  "ner_tags": ["O", "O", "B-Entity", "O", "O", "O", "B-Location"]
+}
