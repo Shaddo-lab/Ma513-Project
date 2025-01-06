@@ -35,13 +35,11 @@ Here is an example of what a line in the dataset looks like:
 ```
 ## How to Use
 
-### Training the Model
-
 To train the model, follow these steps:
 
-1. **Prepare the Dataset**: Place the training and validation datasets in your project directory, naming them `NER-TRAINING.jsonlines` and `NER-VALIDATION.jsonlines`.
-2. **Execute the Training Script**: Run the following command to start training the model:
+1. **Prepare the Dataset**: Place the training and validation datasets in your project directory, naming them `NER-TRAINING.jsonlines`,`NER-TESTING.jsonlines` and `NER-VALIDATION.jsonlines`.
+2. **Execute the  Script**: Run the code with all the files in the same repertory
 
-   ```bash
-   python train_model.py
+
+
 
