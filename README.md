@@ -43,7 +43,7 @@ To train the model, follow these steps:
    
 5. **Evaluation**: After running the file, you will have an evaluation of the model on the validation dataset, and it wsill print you a classification report.
    
-3  **Output file**:  A prediction file named : `NER-TESTING-PREDICTIONS.jsonlines` will be created in the same repertory. 
+6. **Output file**:  A prediction file named : `NER-TESTING-PREDICTIONS.jsonlines` will be created in the same repertory. 
 
 
 
