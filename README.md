@@ -38,8 +38,11 @@ Here is an example of what a line in the dataset looks like:
 To train the model, follow these steps:
 
 1. **Prepare the Dataset**: Place the training and validation datasets in your project directory, naming them `NER-TRAINING.jsonlines`,`NER-TESTING.jsonlines` and `NER-VALIDATION.jsonlines`.
-2. **Execute the  Script**: Run the code with all the files in the same repertory.
-3. **Evaluation**: After running the file, you will have an evaluation of the model on the validation dataset, and it wsill print you a classification report.
+   
+3. **Execute the  Script**: Run the code with all the files in the same repertory.
+   
+5. **Evaluation**: After running the file, you will have an evaluation of the model on the validation dataset, and it wsill print you a classification report.
+   
 3  **Output file**:  A prediction file named : `NER-TESTING-PREDICTIONS.jsonlines` will be created in the same repertory. 
 
 
