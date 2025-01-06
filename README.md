@@ -37,7 +37,7 @@ To do so, after having installed the drivers, you will have to type the followin
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-You will have to change the "/cu118" according to which version your GPU has. 
+You will have to change the "/cu118" according to which version your GPU has, so the one that you installed. 
 To know which one you need, you have to type inside your command prompt : 
 ```python
 nvidia-smi
