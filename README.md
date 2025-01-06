@@ -33,3 +33,15 @@ Here is an example of what a line in the dataset looks like:
   "ner_tags": ["O", "O", "B-Entity", "O", "O", "O", "B-Location"]
 }
 ```
+## How to Use
+
+### Training the Model
+
+To train the model, follow these steps:
+
+1. **Prepare the Dataset**: Place the training and validation datasets in your project directory, naming them `NER-TRAINING.jsonlines` and `NER-VALIDATION.jsonlines`.
+2. **Execute the Training Script**: Run the following command to start training the model:
+
+   ```bash
+   python train_model.py
+
