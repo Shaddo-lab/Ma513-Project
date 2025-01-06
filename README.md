@@ -15,6 +15,7 @@ Ensure you are using Python 3.7 or higher, and install the following dependencie
 
 ```bash
 pip install torch transformers datasets pandas scikit-learn
+```
 
 ## Dataset Format
 
@@ -31,3 +32,4 @@ Here is an example of what a line in the dataset looks like:
   "tokens": ["The", "company", "Apple", "is", "based", "in", "California"],
   "ner_tags": ["O", "O", "B-Entity", "O", "O", "O", "B-Location"]
 }
+```
