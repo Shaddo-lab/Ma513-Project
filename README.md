@@ -16,7 +16,23 @@ Ensure you are using Python 3.7 or higher, and install the following dependencie
 ```bash
 pip install torch transformers datasets pandas scikit-learn
 ```
+### GPU Compatibility
 
+The code is designed to leverage GPU acceleration if available. Ensure your system has a GPU and the appropriate drivers installed (e.g., CUDA). If a GPU is not found, the code will default to using the CPU.
+
+Example code snippet for device setup:
+
+```python
+# Check if GPU is available and set device
+if torch.cuda.is_available():
+    print("GPU is available!")
+    device = torch.device("cuda")
+else:
+    print("GPU not found. Using CPU.")
+    device = torch.device("cpu")
+```
+
+To do so
 ## Dataset Format
 
 The dataset is structured in JSONLINES format, where each line represents a JSON object containing the following fields:
@@ -43,7 +59,8 @@ To train the model, follow these steps:
    
 5. **Evaluation**: After running the file, you will have an evaluation of the model on the validation dataset, and it wsill print you a classification report.
    
-6. **Output file**:  A prediction file named : `NER-TESTING-PREDICTIONS.jsonlines` will be created in the same repertory. 
+6. **Output file**:  A prediction file named : `NER-TESTING-PREDICTIONS.jsonlines` will be created in the same repertory.
+
 
 
 
