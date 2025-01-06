@@ -32,7 +32,17 @@ else:
     device = torch.device("cpu")
 ```
 
-To do so
+To do so, after having installed the drivers, you will have to type the following command in the terminal : 
+```python
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+You will have to change the "/cu118" according to which version your GPU has. 
+To know which one you need, you have to type inside your command prompt : 
+```python
+nvidia-smi
+```
+
 ## Dataset Format
 
 The dataset is structured in JSONLINES format, where each line represents a JSON object containing the following fields:
